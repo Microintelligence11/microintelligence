@@ -49,6 +49,26 @@
     color: #fff;
 }
 
+.burger{
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    width: 30px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.line{
+    width: 30px;
+    border: 1px solid #fff;
+}
+
 
 
 /* StartHeding strat here  */
@@ -72,9 +92,8 @@
 /* hero section start here  */
 
 .slider{
-    width: 100%;
-    height: 65vh;
-    position: absolute;
+    width: 100vw;
+    height: 60vh;
     background-image: url('../img/sliderImg-big-1.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,7 +106,7 @@
 }
 
 .slidr-btn{
-    margin-left: 21vw;
+    margin-left: 20.5vw;
     padding: 0.5rem;
     width: 10rem;
     height: 2.5rem;
@@ -114,16 +133,109 @@
     75%{background-image: url('../img/sliderImg-big-4.png');}
 }
 
-@media screen and (max-width:1000px) {
-    .slider{
-        background-image: url('../img/slider-sm-1.png');
-        width: 100%;
-        height: 30%;
-    }
-    
-    @keyframes slider {
-        0%{background-image: url('../img/sliderImg-sm-2.png');}
-        35%{background-image: url('../img/sliderImg-sm-3.png');}
-        75%{background-image: url('../img/slider-sm-4.png');}
-    }
+/* heroServices section Start here  */
+
+.section{
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    margin-left: 4.3vw;
+    margin-right: 4.3vw;
+    width: 91.4vw;
+}
+
+.sectionHeding{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #0E0A60;
+    font-weight: 700;
+}
+
+.card-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card{
+    width: 17.845rem;
+    height: 21.583rem;
+}
+
+.dec-heading{
+    font-size: 1.3rem;
+    padding: 0.5rem 0rem;
+    color: #000000;
+}
+
+.card-para{
+    margin-bottom: 0.8rem;
+    line-height: 1.4rem;
+    color: #000000;
+}
+.dec a{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0E0A60;
+    letter-spacing: 0.1rem;
+}
+
+.img img{
+    width: 17.845rem;
+    height: 12.50rem;
+}
+
+/* Number Counter Contaner Start here  */
+
+
+.numberCounterContainer{
+    width: 91.4vw;
+    height: 20Vh;
+    background-color: #fbfbfd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.Counter-Number{
+    font-size: 2rem;
+    color: #000000;
+
+}
+
+.number-hedings{
+    font-size: 1.2rem;
+    padding-bottom: 0.2rem;
+    color: #000000;
+
+}
+
+.number-para{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* footer section strat here   */
+
+.footer{
+    margin-top: 2rem;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+}
+
+.footer-ancher{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactUs p{
+    line-height: 1.8rem;
 }
