@@ -136,3 +136,31 @@
         height: auto;
     }
 }
+
+
+/* about page start here  */
+
+
+@media screen and (max-width:760px) {
+    .about-container{
+        flex-wrap: wrap-reverse;
+        overflow-x: hidden;
+    }
+}
+
+
+
+/* error page strt here  */
+
+
+@media screen and (max-width:869px) {
+    .resone-error{
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .four-error{
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+}
+

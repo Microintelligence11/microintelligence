@@ -1,5 +1,27 @@
 console.log("Hello")
 
+
+// haburger start here 
+
+burger = document.querySelector('.burger');
+nanItem = document.querySelector('.nav-item');
+navbar = document.querySelector('.hidden');
+
+burger.addEventListener('click',()=>{
+    navbar.classList.toggle('hidden');
+});
+
+
+// swiper start here 
+
+// var swiper = new Swiper(".mySwiper", {
+//     effect: "cards",
+//     grabCursor: true,
+//     autoplay:{
+//         delay:3000,
+//     },
+//   });
+
 // #################### Number Counter code start here #############################################
 
 const UpdateSectionCounter = document.querySelector('.Counter-Number');
@@ -36,14 +58,5 @@ const workObserver = new IntersectionObserver((entries, observe) => {
 workObserver.observe(UpdateSectionCounter);
 
 
-// haburger start here 
-
-burger = document.querySelector('.burger');
-nanItem = document.querySelector('.nav-item');
-navbar = document.querySelector('.hidden');
-
-burger.addEventListener('click',()=>{
-    navbar.classList.toggle('hidden');
-});
 
 

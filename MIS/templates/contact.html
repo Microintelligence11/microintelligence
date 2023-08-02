@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block meta %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock meta %}
+
+{% block title %}Microintelligence | Contact US{% endblock title %}
+
+
+{% block body %}
+<section class="section">
+    <div>
+        <h1 class="sectionHeding">Contact us now for any quary!</h1>
+    </div>
+        <form action="thank_you" method="post">{% csrf_token %} 
+            <input type="text" placeholder="Enter Your Name" class="form-input" name="name" required>
+            <input type="email" placeholder="Enter Your E - Mail Address" class="form-input" name="email" required>
+            <input type="text" placeholder="Enter Your Phone Number" class="form-input" name="phone" required>
+            <textarea name="textarea"  cols="30" rows="10" placeholder="Enter Your Quary Here!" required class="textarea"></textarea>
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+</section>
+
+{% endblock body %}

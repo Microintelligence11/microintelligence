@@ -23,4 +23,9 @@ from django.conf import settings
 urlpatterns = [
     path('', views.index, name = 'index'),
     path('index', views.index, name = 'index'),
+    path('about', views.about, name = 'about'),
+    path('services', views.services, name = 'services'),
+    path('contact', views.contact, name = 'contact'),
+    path('thank_you', views.thank_you, name = 'thank_you'),
+    path('error', views.error, name = 'error')
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

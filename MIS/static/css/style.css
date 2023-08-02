@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-
 /* navbar designe start here  */
 
 
@@ -49,7 +48,7 @@
     color: #fff;
 }
 
-.burger{
+.burger {
     opacity: 0;
     position: absolute;
     right: 5%;
@@ -64,7 +63,7 @@
     cursor: pointer;
 }
 
-.line{
+.line {
     width: 30px;
     border: 1px solid #fff;
 }
@@ -91,7 +90,7 @@
 
 /* hero section start here  */
 
-.slider{
+.slider {
     width: 100vw;
     height: 60vh;
     background-image: url('../img/sliderImg-big-1.png');
@@ -105,7 +104,7 @@
     align-items: start;
 }
 
-.slidr-btn{
+.slidr-btn {
     margin-left: 20.5vw;
     padding: 0.5rem;
     width: 10rem;
@@ -120,7 +119,7 @@
     font-weight: 200;
 }
 
-.slidr-btn:hover{
+.slidr-btn:hover {
     background-color: #0E0A60;
     color: #fff;
     border: 1px solid #fff;
@@ -128,59 +127,69 @@
 }
 
 @keyframes slider {
-    0%{background-image: url('../img/sliderImg-big-2.png');}
-    35%{background-image: url('../img/sliderImg-big-3.png');}
-    75%{background-image: url('../img/sliderImg-big-4.png');}
+    0% {
+        background-image: url('../img/sliderImg-big-2.png');
+    }
+
+    35% {
+        background-image: url('../img/sliderImg-big-3.png');
+    }
+
+    75% {
+        background-image: url('../img/sliderImg-big-4.png');
+    }
 }
 
 /* heroServices section Start here  */
 
-.section{
+.section {
     margin-top: 5rem;
     margin-bottom: 0rem;
     margin-left: 4.3vw;
     margin-right: 4.3vw;
     width: 91.4vw;
+
 }
 
-.sectionHeding{
+.sectionHeding {
     font-size: 1.8rem;
     margin-bottom: 2rem;
     color: #0E0A60;
     font-weight: 700;
 }
 
-.card-items{
+.card-items {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
 }
 
-.card{
+.card {
     width: 17.845rem;
     height: 21.583rem;
 }
 
-.dec-heading{
+.dec-heading {
     font-size: 1.3rem;
     padding: 0.5rem 0rem;
     color: #000000;
 }
 
-.card-para{
+.card-para {
     margin-bottom: 0.8rem;
     line-height: 1.4rem;
     color: #000000;
 }
-.dec a{
+
+.dec a {
     font-weight: 600;
     font-size: 1rem;
     color: #0E0A60;
     letter-spacing: 0.1rem;
 }
 
-.img img{
+.img img {
     width: 17.845rem;
     height: 12.50rem;
 }
@@ -188,7 +197,7 @@
 /* Number Counter Contaner Start here  */
 
 
-.numberCounterContainer{
+.numberCounterContainer {
     width: 91.4vw;
     height: 20Vh;
     background-color: #fbfbfd;
@@ -199,20 +208,20 @@
     text-align: center;
 }
 
-.Counter-Number{
+.Counter-Number {
     font-size: 2rem;
     color: #000000;
 
 }
 
-.number-hedings{
+.number-hedings {
     font-size: 1.2rem;
     padding-bottom: 0.2rem;
     color: #000000;
 
 }
 
-.number-para{
+.number-para {
     font-size: 0.8rem;
     font-weight: 500;
     color: #000000;
@@ -220,7 +229,7 @@
 
 /* footer section strat here   */
 
-.footer{
+.footer {
     margin-top: 2rem;
     width: 100vw;
     height: 5rem;
@@ -231,11 +240,252 @@
     color: #fff;
 }
 
-.footer-ancher{
+.footer-ancher {
     text-decoration: none;
     color: #fff;
 }
 
-.contactUs p{
+.contactUs p {
     line-height: 1.8rem;
 }
+
+
+
+/* About Page Start here  */
+
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-Img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.about-para {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #000000;
+}
+
+
+/* services page start here */
+
+.Services-card {
+    width: 17.845rem;
+    height: 27.583rem;
+}
+
+.services-dec-heading {
+    font-size: 1.3rem;
+    padding: 0.5rem 0rem;
+    color: #000000;
+    padding-left: 0.8rem;
+}
+
+
+.services-card-para {
+    margin-bottom: 0.8rem;
+    line-height: 1.4rem;
+    color: #000000;
+    padding-left: 0.8rem;
+}
+
+.services-dec a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0E0A60;
+    letter-spacing: 0.1rem;
+    padding-left: 0.8rem;
+}
+
+/* swiper start here  */
+
+.swiper {
+    width: 17.845rem;
+    height: 27.583rem;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: #fff;
+}
+
+
+
+
+
+/* Contact Us Page Start Here !*/
+
+
+
+.form-input {
+    width: 91.4vw;
+    padding: 0.6rem 1rem;
+    margin: 0.6rem 0rem;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.textarea{
+    width: 91.4vw;
+    padding: 0.6rem 1rem;
+    margin: 0.6rem 0rem;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.form-btn{
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid #0E0A60;
+    color: #0E0A60;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    background-color: #0E0A60;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 0.4s linear;
+}
+
+
+/* error page start here  */
+
+
+.mian-error{
+    width: 80vw;
+    height: 90vh;
+    margin: 2rem 10vw;
+    background-color: #fbfbfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.four-error{
+    padding: 0.33rem 0;
+    color: red;
+    font-size: 2rem;
+}
+
+
+.resone-error{
+    padding: 0.55rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: red;
+    font-size: 1.8rem;
+}
+
+
+.error-btn a{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0E0A60;
+    letter-spacing: 0.1rem
+}
+
+
+
+/* error page start here  */
+
+.mian-success{
+    width: 80vw;
+    height: 90vh;
+    margin: 2rem 10vw;
+    background-color: #fbfbfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.four-success{
+    padding: 0.33rem 0;
+    color: green;
+    font-size: 2rem;
+}
+
+.success-btn{
+    padding: 0.55rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: green;
+    font-size: 1.8rem;
+}
+
+.success-btn a{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0E0A60;
+    letter-spacing: 0.1rem
+}
+
+
+.resone-success{
+    padding: 0.55rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: green;
+    font-size: 1.8rem;
+}
+
+
+
+

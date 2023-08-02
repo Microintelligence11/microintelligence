@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block meta %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock meta %}
+
+{% block title %}Thank You{% endblock title %}
+
+
+{% block body %}
+
+{% if messages %}
+{% for message in messages %}
+<div class="mian-success">
+    <div class="four-success">
+        <h3>Successfull!</h3>
+    </div>
+    <div class="resone-success {{ message.tags }}">
+        <p>{{ message }}</p>
+    </div>
+    <div class="success-btn">
+        <a href="contact">go back -></a>
+    </div>
+</div>
+{% endfor %}
+{% endif %}
+
+{% endblock body %}

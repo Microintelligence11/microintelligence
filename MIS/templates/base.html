@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block meta %}{% endblock meta %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/resposive.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header class="navBar">
+        <div class="logo">
+            <span><a href="index">Microintelligence Software</a></span>
+        </div>
+        <nav class="mainNav">
+            <div class="nav-list">
+                <ul class="nav-item hidden">
+                    <li class="navlink"><a href="index">Home</li></a>
+                    <li class="navlink"><a href="about">About</li></a>
+                    <li class="navlink"><a href="services">Services</li></a>
+                    <li class="navlink"><a href="contact">Contact US</li></a>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% block body %}  {% endblock body %}
+    <!-- footer section strat here  -->
+
+    <footer class="footer">
+        <div class="copyRight">
+            <p>(c) Copy Right Reserve 2022-2023</p>
+        </div>
+        <div class="developBy">
+            <p>Develop By - <a href="index" class="footer-ancher"> Microintelligence Software</a></p>
+        </div>
+        <div class="contactUs">
+            <p><a href="tel: +916398516946" class="footer-ancher">6398516946</a></p>
+            <p><a href="mailto: microintelligence786@gmail.com" class="footer-ancher">microintelligence786@gmail.com</a></p>
+        </div>
+    </footer>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
