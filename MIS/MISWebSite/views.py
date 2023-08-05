@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import contactUs
+from .models import contactUs, BookOnline
 from django.contrib import messages
 
 # Create your views here.
@@ -14,33 +14,70 @@ def about(request):
 def services(request):
     return render(request,'services.html')
 
-def contact(request):
-    return render(request,'contact.html')
-
-def thank_you(request):
+def book_online(request):
     if request.method == 'POST':
         name = request.POST['name']
         email = request.POST['email']
         phone = request.POST['phone']
+        city = request.POST['city']
+        service_name = request.POST['service_name']
         textarea = request.POST['textarea']
         if len(name)<= 3:
-            messages.error(request, "Name is too short, please try again later!")
-            return redirect('error')
+                messages.error(request, "Name is too short, please try again later!")
+                return redirect('error')
         if len(email)<=11:
-            messages.error(request, "email not valid please try agin later!") 
-            return redirect('error')
+                messages.error(request, "email not valid please try agin later!") 
+                return redirect('error')
         if len(phone)<10:
-            messages.error(request,"phone number not valid, please try again later!")
-            return redirect('error')
-        if len(textarea)<=5:
-            messages.error(request,"please describe your full quary, and try again later!")  
-            return redirect('error')
-
+                messages.error(request,"phone number not valid, please try again later!")
+                return redirect('error')
+        if len(city)<= 3:
+                messages.error(request, "Cityn ame is too short, please try again later!")
+                return redirect('error')
+        if service_name == "select":
+             messages.error(request, "Please select Service & try again later!")
+             return redirect('error')
         else:
-            contact_Us = contactUs(name=name, email=email, phone=phone, textarea=textarea)
-            contact_Us.save()
-            messages.success(request,"Your quary has been submitted Successfully.")
+             book_online = BookOnline(name=name, email=email, phone=phone, city=city, service_name=service_name, textarea=textarea)
+             book_online.save()
+             messages.success(request,"your service book successfully, we are connect you shortly.")
+             return redirect('thank_you')
+
+    return render(request, 'book_online.html')
+
+def contact(request):
+        if request.method == 'POST':
+            name = request.POST['name']
+            email = request.POST['email']
+            phone = request.POST['phone']
+            textarea = request.POST['textarea']
+            if len(name)<= 3:
+                messages.error(request, "Name is too short, please try again later!")
+                return redirect('error')
+            if len(email)<=11:
+                messages.error(request, "email not valid please try agin later!") 
+                return redirect('error')
+            if len(phone)<10:
+                messages.error(request,"phone number not valid, please try again later!")
+                return redirect('error')
+            if len(textarea)<=5:
+                messages.error(request,"please describe your full quary, and try again later!")  
+                return redirect('error')
     
+
+            else:
+                contact_Us = contactUs(name=name, email=email, phone=phone, textarea=textarea)
+                contact_Us.save()
+                messages.success(request,"Your quary has been submitted Successfully.")
+                return redirect('thank_you')
+            
+        return render(request, 'contact.html')
+
+
+    
+
+
+def thank_you(request):
     return render(request, 'thank_you.html')      
         
 
