@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure--8y4_a2kb)bvzmegl9maysf-)a(ziih*$!w=0vnemf7=_8jcgf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','127.0.0.1','.now.sh']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1']
 
 
 # Application definition
@@ -88,11 +88,10 @@ WSGI_APPLICATION = 'MIS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get("DB_NAME"),
-        'USER': os.environ.get("DB_USER"),
-        'PASSWORD': os.environ.get("DB_PASSWORD"),
-        'HOST': os.environ.get("DB_HOST"),
-        'PORT': os.environ.get("DB_PORT"),
+        'NAME': 'MIS', 
+        'USER': 'postgres',
+        'PASSWORD': 'Madinah@123456',
+
     }
 }
 
@@ -155,8 +154,3 @@ MESSAGE_TAGS = {
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
-
-os.environ.get("mis_app.env")
