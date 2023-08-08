@@ -25,6 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure--8y4_a2kb)bvzmegl9maysf-)a(ziih*$!w=0vnemf7=_8jcgf'
 
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -88,10 +90,13 @@ WSGI_APPLICATION = 'MIS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'MIS', 
-        'USER': 'postgres',
-        'PASSWORD': 'Madinah@123456',
-
+        'POSTGRES_URL':'postgres://default:0jswChSxr9Dv@ep-wild-mud-57168151-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb',
+        'POSTGRES_PRISMA_URL':'postgres://default:0jswChSxr9Dv@ep-wild-mud-57168151-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15',
+        'POSTGRES_URL_NON_POOLING':'postgres://default:0jswChSxr9Dv@ep-wild-mud-57168151.us-east-1.postgres.vercel-storage.com:5432/verceldb',
+        'POSTGRES_USER':'default',
+        'POSTGRES_HOST':'ep-wild-mud-57168151-pooler.us-east-1.postgres.vercel-storage.com',
+        'POSTGRES_PASSWORD':'0jswChSxr9Dv',
+        'POSTGRES_DATABASE':'verceldb',
     }
 }
 
