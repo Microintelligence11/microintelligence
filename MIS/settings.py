@@ -90,16 +90,12 @@ WSGI_APPLICATION = 'MIS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'POSTGRES_URL':'postgres://default:0jswChSxr9Dv@ep-wild-mud-57168151-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb',
-        'POSTGRES_PRISMA_URL':'postgres://default:0jswChSxr9Dv@ep-wild-mud-57168151-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15',
-        'POSTGRES_URL_NON_POOLING':'postgres://default:0jswChSxr9Dv@ep-wild-mud-57168151.us-east-1.postgres.vercel-storage.com:5432/verceldb',
-        'POSTGRES_USER':'default',
-        'POSTGRES_HOST':'ep-wild-mud-57168151-pooler.us-east-1.postgres.vercel-storage.com',
-        'POSTGRES_PASSWORD':'0jswChSxr9Dv',
-        'POSTGRES_DATABASE':'verceldb',
-    }
+        'NAME':'verceldb',
+        'USER':'default',
+        'PASSWORD':'0jswChSxr9Dv',
+        'HOST':'ep-wild-mud-57168151-pooler.us-east-1.postgres.vercel-storage.com',
 }
-
+}
 
 
 # Password validation
