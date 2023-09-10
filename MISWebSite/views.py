@@ -74,15 +74,41 @@ def contact(request):
         return render(request, 'contact.html')
 
 
-    
-
-
 def thank_you(request):
     return render(request, 'thank_you.html')      
         
 
-
-
 def error(request):
     return render(request, 'error.html')
+
+def view_software_development(request):
+     return render(request, 'view_software_development.html')
+
+def view_web_development(request):
+     return render(request, 'view_web_development.html')
+
+def view_app_development(request):
+     return render(request, 'view_app_development.html')
+
+def view_blog_development(request):
+     return render(request, 'view_blog_development.html')
+
+def view_landing_page_development(request):
+     return render(request, 'view_landing_page_development.html')
+
+def view_digital_marketing(request):
+     return render(request, 'view_digital_marketing.html')
+
+def view_seo(request):
+     return render(request, 'view_seo.html')
+
+def view_facebook_ads(request):
+     return render(request, 'view_facebook_ads.html')
+
+def view_google_ads(request):
+     return render(request, 'view_google_ads.html')
+
+def view_web_hosting(request):
+     return render(request, 'view_web_hosting.html')
     
+

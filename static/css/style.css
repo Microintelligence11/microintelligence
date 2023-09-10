@@ -160,14 +160,22 @@
 
 .card-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 8rem;
 }
 
 .card {
     width: 17.845rem;
     height: 21.583rem;
+}
+
+.card-href{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 0.5rem;
 }
 
 .dec-heading {
