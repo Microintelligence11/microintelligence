@@ -240,7 +240,7 @@
 .footer {
     margin-top: 2rem;
     width: 100vw;
-    height: 5rem;
+    height: 7.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -256,7 +256,6 @@
 .contactUs p {
     line-height: 1.8rem;
 }
-
 
 
 /* About Page Start here  */

@@ -110,5 +110,12 @@ def view_google_ads(request):
 
 def view_web_hosting(request):
      return render(request, 'view_web_hosting.html')
+
+
+def terms_and_conditions(request):
+     return render(request,'terms_and_conditions.html')
+
+def privacy_policy(request):
+     return render(request,'privacy_policy.html')
     
 
