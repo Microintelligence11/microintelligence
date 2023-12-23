@@ -117,5 +117,8 @@ def terms_and_conditions(request):
 
 def privacy_policy(request):
      return render(request,'privacy_policy.html')
+
+def sitemap(request):
+     return render(request, 'sitemap.xml')
     
 

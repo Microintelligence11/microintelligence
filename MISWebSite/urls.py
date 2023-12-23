@@ -40,5 +40,6 @@ urlpatterns = [
     path('view_google_ads', views.view_google_ads, name = 'view_google_ads'),
     path('view_web_hosting', views.view_web_hosting, name = 'view_web_hosting'),
     path('terms_and_conditions', views.terms_and_conditions, name = 'terms_and_conditions'),
-    path('privacy_policy', views.privacy_policy, name = 'privacy_policy')
+    path('privacy_policy', views.privacy_policy, name = 'privacy_policy'),
+    path('sitemap', views.sitemap, name = 'sitemap')
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
