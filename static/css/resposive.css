@@ -1,31 +1,25 @@
 /* Nav Bar Start here  */
-@media screen and (max-width:760px) {
+@media screen and (max-width:985px) {
     .navBar{
         display: block;
         height: auto;
         overflow-x: hidden;
     }
-
     .nav-item{
         display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-left: 1.5rem;
         transition: all 10s linear;
     }
 
     .nav-item .navlink{
-        padding: 2rem 0rem;
+        padding: 0.4rem 0rem;
     }
     .logo{
-        display: block;
         display: flex;
-        justify-content: center;
         align-items: center;
-        text-align: center;
         width: 100vw;
-        height: 3.5rem;
-        margin-left: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1.5rem;
     }
 
     .burger{
@@ -37,60 +31,18 @@
 }
 
 
-
-
-
-
-
-
-
 /* Slider Start Here  */
 
-@media screen and (max-width:997px) {
-    .slider{
-        height: 50vh;
-        background-image: url('../img/slider-sm-1.png');
-    }
-
-    @keyframes slider {
-        0%{background-image: url('../img/sliderImg-sm-2.png');}
-        35%{background-image: url('../img/sliderImg-sm-3.png');}
-        75%{background-image: url('../img/slider-sm-4.png');}
-    }
-
-}
-
-@media screen and (max-width:414px) {
+@media screen and (max-width:1024px) {
     .slider{
         height: 32vh;
         background-image: url('../img/slider-sm-1.png');
     }
 
-    .slidr-btn{
-        width: 5rem;
-        height: 1.5rem;
-        font-size: 0.5rem;
-        margin-left: 1.5rem;
-    }
-
     @keyframes slider {
         0%{background-image: url('../img/sliderImg-sm-2.png');}
         35%{background-image: url('../img/sliderImg-sm-3.png');}
         75%{background-image: url('../img/slider-sm-4.png');}
-    }
-
-}
-
-@media screen and (max-width:858px) {
-    .slidr-btn{
-        margin-left: 18vw;
-    }
-
-}
-
-@media screen and (max-width:540px) {
-    .slidr-btn{
-        margin-left: 10vw;
     }
 
 }
@@ -102,25 +54,25 @@
 @media screen and (max-width:1292px) {
     .card-items{
         flex-wrap: wrap;
+        gap: 0rem;
+        margin-bottom: 0rem;
     }
     .card{
-        margin-bottom: 2.5rem;
+        margin-bottom: 7.2rem;
     }
-
 }
 
 /* footer start here  */
 
 @media screen and (max-width:803px) {
     .footer{
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        height: 20vh;
+        display: block;
+        height: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        /* margin-bottom: 1.8rem; */
     }
-
     .copyRight{
         line-height: 2rem;
     }
