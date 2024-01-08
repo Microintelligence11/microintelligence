@@ -8,6 +8,21 @@
 {% endblock meta %}
 
 {% block title %}India's No.1 Software & Digital Marketing Company{% endblock title %}
+{% block markup %}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Microintelligence Software",
+      "url": "https://www.microintelligence.in",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>    
+{% endblock markup %}
 
 
 {% block body %}
