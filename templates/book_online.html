@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block meta %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock meta %}
+
+{% block title %}Microintelligence | Book Online{% endblock title %}
+
+
+{% block body %}
+<section class="section">
+    <div>
+        <h1 class="sectionHeding">Fill this form & avail 35% extra discount in our services</h1>
+    </div>
+        <form action="book_online" method="post">{% csrf_token %} 
+            <input type="text" placeholder="Enter your name" class="form-input" name="name" required>
+            <input type="email" placeholder="Enter your e Mail Address" class="form-input" name="email" required>
+            <input type="text" placeholder="Enter your phone number" class="form-input" name="phone" required>
+            <input type="text" placeholder="Enter your city name" class="form-input" name="city" required>
+            <select name="service_name" class="form-input">
+                <option value="select">Select</option>
+                <option value="software_development">Software Development</option>
+                <option value="web_development">Web Development</option>
+                <option value="web_application_development">Web Application Development</option>
+                <option value="blog_development">Blog Development</option>
+                <option value="landing_page_development">Landing Page Development</option>
+                <option value="web_hosting">Web Hosting</option>
+                <option value="digital_marketing">Digital Marketing</option>
+                <option value="google_ads">Google Ads</option>
+                <option value="facebook_ads">Facebook Ads</option>
+                <option value="SEO">SEO</option>
+            </select>
+            <textarea name="textarea"  cols="30" rows="10" placeholder="Discribe your need (if required!)" class="textarea"></textarea>
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+</section>
+
+{% endblock body %}

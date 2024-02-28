@@ -1,0 +1,118 @@
+/* Nav Bar Start here  */
+@media screen and (max-width:985px) {
+    .navBar{
+        display: block;
+        height: auto;
+        overflow-x: hidden;
+    }
+    .nav-item{
+        display: block;
+        margin-left: 1.5rem;
+        transition: all 10s linear;
+    }
+
+    .nav-item .navlink{
+        padding: 0.4rem 0rem;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 2.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .burger{
+        opacity: unset;
+    }
+    .hidden{
+        display: none;
+    }
+}
+
+
+/* Slider Start Here  */
+
+@media screen and (max-width:1024px) {
+    .slider{
+        height: 32vh;
+        background-image: url('../img/slider-sm-1.png');
+    }
+
+    @keyframes slider {
+        0%{background-image: url('../img/sliderImg-sm-2.png');}
+        35%{background-image: url('../img/sliderImg-sm-3.png');}
+        75%{background-image: url('../img/slider-sm-4.png');}
+    }
+
+}
+
+
+/* Card Start here  */
+
+
+@media screen and (max-width:1292px) {
+    .card-items{
+        flex-wrap: wrap;
+        gap: 0rem;
+        margin-bottom: 0rem;
+    }
+    .card{
+        margin-bottom: 7.2rem;
+    }
+}
+
+/* footer start here  */
+
+@media screen and (max-width:803px) {
+    .footer{
+        display: block;
+        height: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        /* margin-bottom: 1.8rem; */
+    }
+    .copyRight{
+        line-height: 2rem;
+    }
+
+}
+
+
+/* Number Counter Contaner Start here  */
+
+@media screen and (max-width:600px) {
+    .numberCounterContainer{
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
+
+
+/* about page start here  */
+
+
+@media screen and (max-width:760px) {
+    .about-container{
+        flex-wrap: wrap-reverse;
+        overflow-x: hidden;
+    }
+}
+
+
+
+/* error page strt here  */
+
+
+@media screen and (max-width:869px) {
+    .resone-error{
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .four-error{
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block meta %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock meta %}
+
+{% block title %}error{% endblock title %}
+
+
+{% block body %}
+
+{% if messages %}
+{% for message in messages %}
+<div class="mian-error">
+    <div class="four-error">
+        <h3>404 Error | Resone of errror blow!</h3>
+    </div>
+    <div class="resone-error {{ message.tags }}">
+        <p>{{ message }}</p>
+    </div>
+    <div class="error-btn">
+        <a href="contact">try again - quary</a><br>
+        <a href="book_online">try again - booking</a>
+    </div>
+</div>
+{% endfor %}
+{% endif %}
+
+{% endblock body %}

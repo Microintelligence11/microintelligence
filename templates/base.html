@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block meta %}{% endblock meta %}
+    {% block markup %}{% endblock markup %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/resposive.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="../static/img/MIS_Logo.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>{% block title %}{% endblock title %}</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '141279399026730');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=141279399026730&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    
+    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6WXE3CVJK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z6WXE3CVJK');
+</script>
+ <!-- Google tag (gtag.js) End-->
+</head>
+
+<body>
+    <header class="navBar">
+        <div class="logo">
+            <span><a href="index">Microintelligence Software</a></span>
+        </div>
+        <nav class="mainNav">
+            <div class="nav-list">
+                <ul class="nav-item hidden">
+                    <li class="navlink"><a href="index">Home</li></a>
+                    <li class="navlink"><a href="about">About</li></a>
+                    <li class="navlink"><a href="services">Services</li></a>
+                    <li class="navlink"><a href="book_online">Book Online</li></a>
+                    <li class="navlink"><a href="contact">Contact US</li></a>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% block body %} {% endblock body %}
+    <!-- footer section strat here  -->
+
+    <footer class="footer">
+        <div class="contactUs">
+            <p>(c) Copy Right Reserve 2022-2023</p>
+            <p><a href="terms_and_conditions" class="footer-ancher">Terms & Conditions</a></p>
+            <p><a href="privacy_policy" class="footer-ancher">Privacy Policy</a></p>
+        </div>
+        <div class="developBy">
+            <p>Develop By - <a href="index" class="footer-ancher"> Microintelligence Software</a></p>
+        </div>
+        <div class="contactUs">
+            <p><a href="tel: +916398516946" class="footer-ancher">+916398516946</a></p>
+            <p><a href="mailto: microintelligence786@gmail.com" class="footer-ancher">info@microintelligence.in</a>
+            </p>
+        </div>
+    </footer>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+
+</html>
